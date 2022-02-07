@@ -1,3 +1,6 @@
+//Takes a name for the fortm the logs it when it is submitted
+//The state updates in real time as tne user types because 
+//"handleChange" runs on every keystroke
 class NameForm extends React.Component {
   constructor(props) {
     super(props);
