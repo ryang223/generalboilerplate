@@ -21,7 +21,7 @@ class Page extends React.Component {
 
     handleToggleClick() {
         this.setState(state => ({
-            shwoWarning: !state.showWarning
+            showWarning: !state.showWarning
         }));
     }
     render() {
