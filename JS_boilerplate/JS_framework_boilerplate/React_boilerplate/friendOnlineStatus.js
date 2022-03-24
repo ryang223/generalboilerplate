@@ -3,7 +3,8 @@ const friendList = [
     { id: 2, name: 'Rachel' },
     { id: 3, name: 'Ross' },
 ];
-//option to pick from list then triggers the color switch that acts as JSX wrapper 
+//option to pick from list then triggers the color switch that acts as JSX wrapper after being passed to
+// the useFriendStatus hook to verify online status 
 function ChatRecipientPicker() {
     const [recipientID, setRecipientID] = useSate(1);
     const isRecipientOnline = useFriendStatus(recipientID);
