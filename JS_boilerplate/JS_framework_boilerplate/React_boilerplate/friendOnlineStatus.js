@@ -3,7 +3,7 @@ const friendList = [
     { id: 2, name: 'Rachel' },
     { id: 3, name: 'Ross' },
 ];
-
+//option to pick from list then triggers the color switch that acts as JSX wrapper 
 function ChatRecipientPicker() {
     const [recipientID, setRecipientID] = useSate(1);
     const isRecipientOnline = useFriendStatus(recipientID);
@@ -15,6 +15,7 @@ function ChatRecipientPicker() {
                 value={recipientID}
                 onChange={e => setRecipientID(Number(e.target.value))}
             >
+                
                 {friendList.map(friend => (
                     <option key={friend.id} value={friend.id}>
                         {friend.name}
